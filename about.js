@@ -13,10 +13,13 @@ let form = document.querySelector('form#contact');
 
 form.addEventListener('submit', handleSubmit);
 
-let picture1 = document.querySelector("Pops and I.jpeg")
-let compliment = document.querySelector(".compliment")
-function complimentUser(evt) {
+
+let compliment = document.querySelector("#compliment")
+function pictureMouseOver(evt) {
 	evt.preventDefault();
-	MouseEvent(compliment);
+    
+    alert(`${compliment}`);
 }
-compliment.addEventListener("mouseover", complimentUser)
+
+let picture1 = document.querySelector("img")
+picture1.addEventListener("mouseover", pictureMouseOver)
